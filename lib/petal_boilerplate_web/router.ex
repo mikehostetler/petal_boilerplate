@@ -20,6 +20,9 @@ defmodule PetalBoilerplateWeb.Router do
     get "/", PageController, :home
     live "/form", FormLive, :index
     live "/live", PageLive, :index
+    live "/chat_example", ChatExampleLive, :index
+    live "/chat", ChatLive, :index
+    live "/conversation", ConversationLive, :index
     live "/live/modal/:size", PageLive, :modal
     live "/live/slide_over/:origin", PageLive, :slide_over
     live "/live/pagination/:page", PageLive, :pagination
